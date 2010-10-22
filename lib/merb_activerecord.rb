@@ -1,6 +1,6 @@
 if defined?(Merb::Plugins)  
   
-  dependency "activerecord"
+  dependency "activerecord" unless defined?(ActiveRecord)
   
   require File.join(File.dirname(__FILE__) / "merb" / "orms" / "active_record" / "cleanup" )
   require File.join(File.dirname(__FILE__) / "merb" / "orms" / "active_record" / "connection")
