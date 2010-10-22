@@ -1,9 +1,6 @@
 require 'rubygems'
 require 'rake'
 
-# Assume a typical dev checkout to fetch the current merb-core version
-require File.expand_path('../../merb/merb-core/lib/merb-core/version', __FILE__)
-
 # Load this library's version information
 require File.expand_path('../lib/merb_activerecord/version', __FILE__)
 
@@ -27,8 +24,8 @@ begin
     gemspec.files       = %w(Generators LICENSE Rakefile README TODO) + Dir['{lib,spec}/**/*']
 
     # Runtime dependencies
-    gemspec.add_dependency 'merb-core',    "= #{Merb::VERSION}"
-    gemspec.add_dependency 'activerecord', '>= 2.3.4'
+    gemspec.add_dependency 'merb-core',    '~> 1.1.1'
+    gemspec.add_dependency 'activerecord', '>= 2.3.2'
 
     # Development dependencies
     gemspec.add_development_dependency 'rspec', '>= 1.2.9'
