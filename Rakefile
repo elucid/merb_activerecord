@@ -13,7 +13,7 @@ begin
 
     gemspec.version     = Merb::ActiveRecord::VERSION
 
-    gemspec.name        = "merb_activerecord"
+    gemspec.name        = "elucid-merb_activerecord"
     gemspec.description = "Merb plugin that provides ActiveRecord support"
     gemspec.summary     = "This plugin allows seamless integration of the ActiveRecord ORM with merb"
 
